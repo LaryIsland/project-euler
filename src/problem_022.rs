@@ -2,12 +2,12 @@ pub fn names_scores() -> u32 {
 	let mut sorted_names = Vec::new();
 
 	let mut data: String = String::new();
-    match std::fs::File::open("problem_22.txt") {
+    match std::fs::File::open("src/problem_022.txt") {
         Ok(mut file) => {
             std::io::Read::read_to_string(&mut file, &mut data).unwrap();
         },
         Err(error) => {
-            println!("Error opening file {}: {}", "problem_22.txt", error);
+            println!("Error opening file {}: {}", "problem_022.txt", error);
         },
     }
 
